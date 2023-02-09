@@ -1,0 +1,37 @@
+.spinner {
+  border-style: solid;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+}
+
+.spinnerSize-s {
+  width: 24px;
+  height: 24px;
+  border-width: 3px;
+}
+
+.spinnerSize-m {
+  width: 36px;
+  height: 36px;
+  border-width: 5px;
+}
+
+.spinnerColor-white {
+  border-color: white;
+  border-bottom-color: transparent;
+}
+
+.spinnerColor-black {
+  border-color: black;
+  border-bottom-color: transparent;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
