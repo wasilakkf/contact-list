@@ -1,6 +1,6 @@
-import React from "react";
-import apiData from "./api";
-import PersonInfo from "./PersonInfo";
+import React from 'react';
+import apiData from './api';
+import PersonInfo from './PersonInfo';
 
 function App() {
   const [data, setData] = React.useState([]);
