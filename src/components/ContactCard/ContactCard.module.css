@@ -1,0 +1,57 @@
+.card {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.baseInfoSection {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+
+.initialsContainer {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.2em;
+}
+
+.nameContainer {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fullName {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #333333;
+}
+
+.jobTitle {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #e74c3c;
+}
+
+.emailSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  font-size: 0.9em;
+  color: #666666;
+}
