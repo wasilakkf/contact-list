@@ -5,7 +5,11 @@
 }
 
 .listSection {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
+}
+
+.fetchButton {
+  margin-bottom: 16px;
 }
 
 .fetchMoreError {
@@ -15,4 +19,5 @@
   padding: 16px;
   font-size: 1.2em;
   color: darkred;
+  margin-bottom: 16px;
 }

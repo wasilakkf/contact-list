@@ -53,20 +53,22 @@ export function App() {
         />
       </div>
 
-      {!isFetching && (
-        <FetchButton
-          isFetchingMore={isFetchingMore}
-          errorOnFetch={errorOnFetch}
-          errorOnFetchMore={errorOnFetchMore}
-          refetch={refetch}
-          fetchMore={fetchMore}
-        />
-      )}
-
       {errorOnFetchMore && (
         <p className={styles.fetchMoreError} data-testid="error_on_fetch_more">
           {errorOnFetchMore}
         </p>
+      )}
+
+      {!isFetching && (
+        <div className={styles.fetchButton}>
+          <FetchButton
+            isFetchingMore={isFetchingMore}
+            errorOnFetch={errorOnFetch}
+            errorOnFetchMore={errorOnFetchMore}
+            refetch={refetch}
+            fetchMore={fetchMore}
+          />
+        </div>
       )}
     </main>
   );

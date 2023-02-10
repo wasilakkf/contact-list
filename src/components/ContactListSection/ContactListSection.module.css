@@ -4,11 +4,11 @@
 }
 
 .title {
-  font-size: 1.8em;
+  font-size: 2.5em;
   color: #333333;
   text-indent: 8px;
   margin-bottom: 32px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 .centeredContent {
