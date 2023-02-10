@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^8.0.1",
     "concurrently": "^6.2.1",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
