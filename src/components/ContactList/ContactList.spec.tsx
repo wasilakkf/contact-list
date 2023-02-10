@@ -3,10 +3,6 @@ import {render, screen, fireEvent} from '@testing-library/react';
 import {ContactList} from './ContactList';
 
 const defaultTestProps = {
-  copy: {
-    title: 'All contacts',
-    emptyList: 'No contacts',
-  },
   contacts: [
     {
       id: '1',
@@ -38,15 +34,6 @@ describe('<ContactList />', () => {
 
     expect(screen.queryByTestId('contact_list')).toBeInTheDocument();
     expect(screen.queryAllByTestId('contact_list_item')).toHaveLength(3);
-    expect(screen.queryByText('All contacts')).toBeInTheDocument();
-  });
-
-  it('renders empty list info if there are 0 contacts', () => {
-    render(<ContactList {...defaultTestProps} contacts={[]} />);
-
-    expect(screen.queryAllByTestId('contact_list_item')).toHaveLength(0);
-    expect(screen.queryByTestId('contact_list_empty_info')).toBeInTheDocument();
-    expect(screen.queryByText('No contacts')).toBeInTheDocument();
   });
 
   it('invokes callback on list item click', () => {

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.8em;
+  color: #333333;
+  text-indent: 8px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid black;
+}
+
+.centeredContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+}
+
+.errorText {
+  font-size: 1.2em;
+  color: darkred;
+}
+
+.infoText {
+  font-size: 1.2em;
+  color: #666666;
+}

@@ -13,24 +13,3 @@
 .listItem:hover {
   border-color: pink;
 }
-
-.title {
-  font-size: 1.8em;
-  border-bottom: 1px solid black;
-  text-indent: 12px;
-  margin-bottom: 32px;
-}
-
-.contentBox {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 0;
-}
-
-.emptyInfo {
-  color: #333333;
-  font-size: 1.2em;
-}
