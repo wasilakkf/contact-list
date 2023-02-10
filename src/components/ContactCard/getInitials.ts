@@ -1,5 +1,9 @@
 export function getInitials(fullName: string) {
-  return fullName.split(' ').map(getFirstLetterAsUppercase).join('');
+  const nameParts = fullName.split(' ');
+  const firstPart = nameParts[0];
+  const lastPart = nameParts[nameParts.length - 1];
+
+  return [firstPart, lastPart].map(getFirstLetterAsUppercase).join('');
 }
 
 function getFirstLetterAsUppercase(word: string) {
