@@ -1,5 +1,7 @@
 import mockData from './mockData.json';
 
+export type ContactDataType = (typeof mockData)[0];
+
 let cursor = -1;
 const size = 10;
 
