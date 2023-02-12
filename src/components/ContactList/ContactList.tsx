@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import ContactListItem, {ContactDataType} from './ContactListItem';
+import ContactListItem, {ContactListItemDataType} from './ContactListItem';
 import styles from './ContactList.module.css';
 
 type PropsType = Readonly<{
-  contacts: ReadonlyArray<ContactDataType>;
+  contacts: ReadonlyArray<ContactListItemDataType>;
   onContactClick: (contactId: string) => unknown;
 }>;
 

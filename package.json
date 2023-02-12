@@ -31,9 +31,6 @@
       "prettier"
     ]
   },
-  "engines": {
-    "node": "v16"
-  },
   "browserslist": {
     "production": [
       ">0.2%",

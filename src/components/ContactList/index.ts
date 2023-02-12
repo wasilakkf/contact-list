@@ -1,2 +1,2 @@
 export {ContactList} from './ContactList';
-export type {ContactDataType} from './ContactListItem';
+export type {ContactListItemDataType} from './ContactListItem';

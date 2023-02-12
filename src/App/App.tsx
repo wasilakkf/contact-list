@@ -10,10 +10,12 @@ const copy = {
   listWithOther: {
     title: 'Other contacts',
     emptyListInfo: "You don't have any other contacts",
+    genericError: 'Error occured. Please try again later',
   },
   listWithSelected: {
     title: 'Selected contacts',
     emptyListInfo: 'No selected contacts',
+    genericError: 'Error occured. Please try again later',
   },
 };
 

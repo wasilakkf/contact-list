@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {ContactList, ContactDataType} from '../ContactList';
+import {ContactList, ContactListItemDataType} from '../ContactList';
 import {Spinner} from '../Spinner';
 import styles from './ContactListSection.module.css';
 
@@ -8,8 +8,9 @@ type PropsType = Readonly<{
   copy: {
     title: string;
     emptyListInfo: string;
+    genericError: string;
   };
-  contacts?: ReadonlyArray<ContactDataType> | null;
+  contacts?: ReadonlyArray<ContactListItemDataType> | null;
   showSpinner?: boolean;
   error?: string | null;
   onContactClick: (contactId: string) => unknown;
@@ -28,7 +29,7 @@ export function ContactListSection({copy, contacts, showSpinner, error, onContac
     if (error || !contacts) {
       return (
         <div className={styles.centeredContent} data-testid="contact_list_section_error">
-          <p className={styles.errorText}>{error}</p>
+          <p className={styles.errorText}>{error ?? copy.genericError}</p>
         </div>
       );
     }
