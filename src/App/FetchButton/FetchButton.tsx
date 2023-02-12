@@ -16,11 +16,21 @@ type PropsType = Readonly<{
   fetchMore: () => unknown;
 }>;
 
-export function FetchButton({isFetchingMore, errorOnFetch, errorOnFetchMore, refetch, fetchMore}: PropsType) {
+export function FetchButton({
+  isFetchingMore,
+  errorOnFetch,
+  errorOnFetchMore,
+  refetch,
+  fetchMore,
+}: PropsType) {
   if (errorOnFetchMore) {
     return (
       <div className={styles.buttonContainer}>
-        <ButtonWithSpinner className={styles.button} data-testid="fetch_button_refetch_more" onClick={fetchMore}>
+        <ButtonWithSpinner
+          className={styles.button}
+          data-testid="fetch_button_refetch_more"
+          onClick={fetchMore}
+        >
           {copy.buttonRefetch}
         </ButtonWithSpinner>
       </div>
@@ -30,7 +40,11 @@ export function FetchButton({isFetchingMore, errorOnFetch, errorOnFetchMore, ref
   if (errorOnFetch) {
     return (
       <div className={styles.buttonContainer}>
-        <ButtonWithSpinner className={styles.button} data-testid="fetch_button_refetch" onClick={refetch}>
+        <ButtonWithSpinner
+          className={styles.button}
+          data-testid="fetch_button_refetch"
+          onClick={refetch}
+        >
           {copy.buttonRefetch}
         </ButtonWithSpinner>
       </div>

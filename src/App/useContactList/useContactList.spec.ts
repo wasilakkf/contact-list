@@ -9,8 +9,18 @@ jest.mock('../useFetchContacts', () => ({
 
 const mockedHookResult = {
   contacts: [
-    {id: '1', firstNameLastName: 'Jon Doe', jobTitle: 'Programmer', emailAddress: 'abc@example.com'},
-    {id: '2', firstNameLastName: 'Han Solo', jobTitle: 'Smuggler', emailAddress: 'han@tatooine.com'},
+    {
+      id: '1',
+      firstNameLastName: 'Jon Doe',
+      jobTitle: 'Programmer',
+      emailAddress: 'abc@example.com',
+    },
+    {
+      id: '2',
+      firstNameLastName: 'Han Solo',
+      jobTitle: 'Smuggler',
+      emailAddress: 'han@tatooine.com',
+    },
     {id: '3', firstNameLastName: 'Tim Tam', jobTitle: 'Dealer', emailAddress: 'xyz@gmail.com'},
     {id: '4', firstNameLastName: 'Ben Doe', jobTitle: 'CEO', emailAddress: 'ben@abc.com'},
   ],

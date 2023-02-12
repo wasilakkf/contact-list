@@ -50,7 +50,13 @@ export function ContactListSection({
       );
     }
 
-    return <ContactList contacts={contacts} withContactOutline={withContactOutline} onContactClick={onContactClick} />;
+    return (
+      <ContactList
+        contacts={contacts}
+        withContactOutline={withContactOutline}
+        onContactClick={onContactClick}
+      />
+    );
   }, [showSpinner, error, contacts, withContactOutline, onContactClick, copy]);
 
   return (

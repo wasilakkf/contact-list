@@ -12,7 +12,11 @@ type PropsType = Readonly<{
 export function Spinner({size = 'm', color = 'black', dataTestId}: PropsType) {
   const spinnerSizeClassName = `spinnerSize-${size}`;
   const spinnerColorClassName = `spinnerColor-${color}`;
-  const spinnerClasses = cn(styles.spinner, styles[spinnerSizeClassName], styles[spinnerColorClassName]);
+  const spinnerClasses = cn(
+    styles.spinner,
+    styles[spinnerSizeClassName],
+    styles[spinnerColorClassName]
+  );
 
   return <div className={spinnerClasses} data-testid={dataTestId} />;
 }

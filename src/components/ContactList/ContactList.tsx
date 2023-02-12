@@ -13,7 +13,12 @@ export function ContactList({contacts, withContactOutline, onContactClick}: Prop
   return (
     <div className={styles.list} data-testid="contact_list">
       {contacts.map((contact) => (
-        <ContactListItem key={contact.id} withOutline={withContactOutline} onClick={onContactClick} {...contact} />
+        <ContactListItem
+          key={contact.id}
+          withOutline={withContactOutline}
+          onClick={onContactClick}
+          {...contact}
+        />
       ))}
     </div>
   );
