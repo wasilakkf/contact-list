@@ -37,6 +37,7 @@ export function App() {
     <main className={styles.container}>
       <div className={styles.listSection}>
         <ContactListSection
+          withContactOutline
           copy={copy.listWithSelected}
           contacts={selectedContacts}
           showSpinner={isFetching}

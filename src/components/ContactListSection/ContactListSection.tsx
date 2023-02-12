@@ -13,10 +13,18 @@ type PropsType = Readonly<{
   contacts?: ReadonlyArray<ContactListItemDataType> | null;
   showSpinner?: boolean;
   error?: string | null;
+  withContactOutline?: boolean;
   onContactClick: (contactId: string) => unknown;
 }>;
 
-export function ContactListSection({copy, contacts, showSpinner, error, onContactClick}: PropsType) {
+export function ContactListSection({
+  copy,
+  contacts,
+  showSpinner,
+  error,
+  withContactOutline,
+  onContactClick,
+}: PropsType) {
   const sectionContent = React.useMemo(() => {
     if (showSpinner) {
       return (
@@ -42,8 +50,8 @@ export function ContactListSection({copy, contacts, showSpinner, error, onContac
       );
     }
 
-    return <ContactList contacts={contacts} onContactClick={onContactClick} />;
-  }, [showSpinner, error, contacts, onContactClick, copy]);
+    return <ContactList contacts={contacts} withContactOutline={withContactOutline} onContactClick={onContactClick} />;
+  }, [showSpinner, error, contacts, withContactOutline, onContactClick, copy]);
 
   return (
     <section className={styles.container} data-testid="contact_list_section">
